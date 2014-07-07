@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>polymer</artifactId>
-    <version>0.3.4-SNAPSHOT</version>
+    <version>0.3.3-1-SNAPSHOT</version>
     <name>Polymer</name>
     <description>WebJar for Polymer</description>
     <url>http://webjars.org</url>
@@ -45,6 +45,14 @@
         <upstream.url>https://github.com/Polymer/polymer/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.webjars</groupId>
+            <artifactId>polymer-platform</artifactId>
+            <version>${upstream.version}</version>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
