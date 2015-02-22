@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <packaging>pom</packaging>
+  <groupId>org.webjars</groupId>
+  <artifactId>polymers</artifactId>
+  <version>[% version %]-SNAPSHOT</version>
+  <name>WebComponent Webjars</name>
+  <description>WebJar for Polymer</description>
+  <url>http://webjars.org</url>
+
+  <properties>
+    <polymer.version>[% version %]</polymer.version>
+    <upstream.version>${project.version}</upstream.version>
+    <upstream.version.prefix />
+    <upstream.module>${project.artifactId}</upstream.module>
+    <upstream.github>Polymer</upstream.github>
+    <upstream.url>https://github.com/${upstream.github}/${upstream.module}/archive/${upstream.version.prefix}${upstream.version}.zip</upstream.url>
+    <destDir>
+      ${project.build.outputDirectory}/META-INF/resources/webjars/polymers/${polymer.version}/${project.artifactId}
+    </destDir>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <modules>
+   [%- FOREACH module = modules %]
+    <module>[% module %]</module>
+   [%- END %]
+  </modules>
+
+  <developers>
+    <developer>
+      <id>jamesward</id>
+      <name>James Ward</name>
+      <email>james@jamesward.com</email>
+    </developer>
+    <developer>
+      <id>cheleb</id>
+      <name>Olivier NOUGUIER</name>
+      <email>olivier.nouguier@gmail.com</email>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>BSD</name>
+      <url>https://github.com/polymer/polymer/blob/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>http://github.com/cheleb/webco-polymer</url>
+    <connection>scm:git:https://github.com/cheleb/webco-polymer.git</connection>
+    <developerConnection>scm:git:https://github.com/cheleb/webco-polymer.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+
+  <profiles>
+    <profile>
+      <id>webjar</id>
+      <activation>
+        <file>
+          <exists>webjar</exists>
+        </file>
+      </activation>
+
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.7</version>
+            <executions>
+              <execution>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
+                <configuration>
+                  <target>
+                    <echo message="download archive"/>
+                    <get src="${upstream.url}" dest="${basedir}/${project.artifactId}-${upstream.version}.zip" skipexisting="true"/>
+                    <echo message="unzip archive"/>
+                    <unzip src="${basedir}/${project.artifactId}-${upstream.version}.zip"
+                           dest="${project.build.directory}"/>
+                    <echo message="moving resources"/>
+                    <move todir="${destDir}">
+                      <fileset dir="${project.build.directory}/${upstream.module}-${upstream.version}"/>
+                    </move>
+                  </target>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.1</version>
+          </plugin>
+
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.5</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>sonatype-nexus-staging</serverId>
+              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+</project>
