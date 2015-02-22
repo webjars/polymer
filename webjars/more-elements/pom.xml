@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.webjars</groupId>
+    <artifactId>polymers</artifactId>
+    <version>0.5.5</version>
+  </parent>
+
+  <packaging>jar</packaging>
+
+  <groupId>org.webjars.polymers</groupId>
+  <artifactId>more-elements</artifactId>
+  <version>0.5.0</version>
+  <name>more-elements</name>
+  <description>WebJar for Polymer </description>
+
+  <properties>
+    <upstream.github>PolymerLabs</upstream.github>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>code-mirror</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>x-meta</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>flatiron-director</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>notification-elements</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>yt-video</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>ace-element</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>speech-mic</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>cool-clock</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>chart-js</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars.polymers</groupId>
+      <artifactId>smoothie-chart</artifactId>
+      <version>[0.5.0,]</version>
+    </dependency>
+  </dependencies>
+</project>
