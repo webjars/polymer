@@ -23,12 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-toolbar</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-resizable</artifactId>
+      <artifactId>core-icons</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -38,12 +33,17 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-icons</artifactId>
+      <artifactId>core-resizable</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>paper-ripple</artifactId>
+      <artifactId>core-selector</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-toolbar</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -58,7 +58,7 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-selector</artifactId>
+      <artifactId>paper-ripple</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>

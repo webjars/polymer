@@ -23,27 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-icon</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-item</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-icons</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-focusable</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-menu</artifactId>
+      <artifactId>core-a11y-keys</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -53,22 +33,42 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>polymer</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-a11y-keys</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
       <artifactId>core-dropdown</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
+      <artifactId>core-focusable</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-icon</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
       <artifactId>core-icon-button</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-icons</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-item</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-menu</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>polymer</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>

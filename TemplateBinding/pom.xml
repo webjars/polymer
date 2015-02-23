@@ -23,12 +23,12 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>observe-js</artifactId>
+      <artifactId>NodeBind</artifactId>
       <version>[0.5,]</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>NodeBind</artifactId>
+      <artifactId>observe-js</artifactId>
       <version>[0.5,]</version>
     </dependency>
   </dependencies>

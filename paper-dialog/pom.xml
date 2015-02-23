@@ -23,12 +23,17 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>paper-button</artifactId>
+      <artifactId>core-overlay</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>polymer</artifactId>
+      <artifactId>core-transition</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>paper-button</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -38,12 +43,7 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-overlay</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-transition</artifactId>
+      <artifactId>polymer</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>

@@ -23,12 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-menu</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>prettify-element</artifactId>
+      <artifactId>context-free-parser</artifactId>
       <version>[0.5,]</version>
     </dependency>
     <dependency>
@@ -38,8 +33,13 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>marked-element</artifactId>
-      <version>[0.5,]</version>
+      <artifactId>core-header-panel</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-icon-button</artifactId>
+      <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
@@ -53,22 +53,22 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
+      <artifactId>core-menu</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
       <artifactId>core-toolbar</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-icon-button</artifactId>
-      <version>0.5.5</version>
+      <artifactId>marked-element</artifactId>
+      <version>[0.5,]</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-header-panel</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>context-free-parser</artifactId>
+      <artifactId>prettify-element</artifactId>
       <version>[0.5,]</version>
     </dependency>
   </dependencies>

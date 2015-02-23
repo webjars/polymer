@@ -10,17 +10,14 @@ use Template;
 
 use Webjarfier::RepoConfig;
 
-my $fetch_tags;
-my $skip_projects;
+my $options = {};
 
-GetOptions ("fetch-tags"  => \$fetch_tags,
-            "skip-projects" => \$skip_projects)   # flag
+
+GetOptions ($options, 'fetch-tags', 'with-projects', 'with-deprecated', 'parse-html')
   or die("Error in command line arguments\n");
 
 
-my $repo = new Webjarfier::RepoConfig($fetch_tags);
-
-$repo->{skipProjects} = $skip_projects;
+my $repo = new Webjarfier::RepoConfig($options);
 
 my $polymers_version = $repo->importProjects();
 #$polymers_version .= "-SNAPSHOT";

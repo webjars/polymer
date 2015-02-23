@@ -67,12 +67,7 @@ my $pinfos = {
 sub new {
   my $class = shift;
 
-  my $fetch_tags = shift;
-
-
-  my $this = {
-    fetch_tags=>$fetch_tags
-  };
+  my $this = shift;
 
   $this->{home} = getcwd();
 
@@ -103,6 +98,7 @@ sub _initialize {
 
   $this->{modules} = {};
 
+
 }
 
 sub importProjects {
@@ -115,7 +111,7 @@ sub importProjects {
   $this->importGroups('paper');
   $this->importGroups('labs');
   $this->importGroups('misc');
-#  $this->importGroups('deprecated');
+  $this->importGroups('deprecated') if $this->{'with-deprecated'};
 
   chdir $this->{home};
 
@@ -155,7 +151,7 @@ sub importGroup {
   my $this = shift;
   my $group = shift;
 
-  return if $group->{dir} eq "projects" && $this->{skipProjects};
+  return unless $group->{dir} ne "projects" || $this->{'with-projects'};
 
   $logger->info("Importing group " . $group->{dir} );
 
@@ -179,7 +175,7 @@ sub importGroup {
     if(-d $module){
       $logger->debug("$repo already cloned in $module");
       $git = Git::Repository->new( work_tree => $module );
-      $git->run(fetch => '--tags') if $this->{fetch_tags};
+      $git->run(fetch => '--tags') if $this->{'fetch-tags'};
     }else{
       my $url = sprintf($GIT_URL_FORMAT, $group->{org}, $repo );
       $logger->info("Cloning $repo from $url to $module");
@@ -239,7 +235,9 @@ sub setDependencies {
   my $this = shift;
   my $moduleInfo = shift;
   my $bower = shift;
-  foreach my $dep (keys %{$bower->{dependencies}}) {
+
+
+  foreach my $dep (sort keys %{$bower->{dependencies}}) {
       my $value = $bower->{dependencies}->{$dep};
       if($value =~ m!([^/]+)/([^#]+)#[\^~](.*)!){
       my $org = $1;
@@ -259,7 +257,7 @@ sub setDependencies {
       $groupId = $pinfos->{$artifactId}->{groupId} if $pinfos->{$artifactId}->{groupId};
       $version = $pinfos->{$artifactId}->{version} if $pinfos->{$artifactId}->{version};
       $version = $this->{modules}->{polymer}->{version} if $artifactId =~ m/^core\-.*$/;
-      
+
       $version = $this->{modules}->{polymer}->{version} if $artifactId =~ m/^paper\-.*$/;
       $version = $this->{modules}->{polymer}->{version} if $artifactId eq "polymer";
 

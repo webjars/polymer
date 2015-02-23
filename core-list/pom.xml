@@ -23,17 +23,17 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
+      <artifactId>core-resizable</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
       <artifactId>core-selection</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>polymer</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-resizable</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>

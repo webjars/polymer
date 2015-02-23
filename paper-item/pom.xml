@@ -33,13 +33,13 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>font-roboto</artifactId>
-      <version>[0.5,]</version>
+      <artifactId>core-selector</artifactId>
+      <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>paper-ripple</artifactId>
-      <version>0.5.5</version>
+      <artifactId>font-roboto</artifactId>
+      <version>[0.5,]</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
@@ -48,7 +48,7 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-selector</artifactId>
+      <artifactId>paper-ripple</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>

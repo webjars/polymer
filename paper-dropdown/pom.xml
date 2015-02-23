@@ -23,17 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-transition</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-icons</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-dropdown</artifactId>
+      <artifactId>core-animation</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -43,17 +33,17 @@
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-animation</artifactId>
+      <artifactId>core-dropdown</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>polymer</artifactId>
+      <artifactId>core-icons</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>paper-shadow</artifactId>
+      <artifactId>core-transition</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -64,6 +54,16 @@
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-item</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>paper-shadow</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>polymer</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>

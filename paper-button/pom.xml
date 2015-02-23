@@ -23,22 +23,7 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>paper-ripple</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
       <artifactId>core-a11y-keys</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>polymer</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>paper-shadow</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
@@ -49,6 +34,21 @@
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>core-icon</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>paper-ripple</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>paper-shadow</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>polymer</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>

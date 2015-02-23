@@ -23,12 +23,12 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-icons</artifactId>
+      <artifactId>core-animation</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
-      <artifactId>core-animation</artifactId>
+      <artifactId>core-icons</artifactId>
       <version>0.5.5</version>
     </dependency>
     <dependency>

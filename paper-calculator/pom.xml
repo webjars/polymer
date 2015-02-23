@@ -23,17 +23,17 @@
   <dependencies>
     <dependency>
       <groupId>org.webjars</groupId>
+      <artifactId>core-media-query</artifactId>
+      <version>0.5.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
       <artifactId>font-roboto</artifactId>
       <version>[0.5,]</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-ripple</artifactId>
-      <version>0.5.5</version>
-    </dependency>
-    <dependency>
-      <groupId>org.webjars</groupId>
-      <artifactId>core-media-query</artifactId>
       <version>0.5.5</version>
     </dependency>
   </dependencies>
