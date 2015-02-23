@@ -255,6 +255,7 @@ sub setDependencies {
 
       $artifactId = $pinfos->{$artifactId}->{artifactId} if $pinfos->{$artifactId}->{artifactId};
       $groupId = $pinfos->{$artifactId}->{groupId} if $pinfos->{$artifactId}->{groupId};
+
       $version = $pinfos->{$artifactId}->{version} if $pinfos->{$artifactId}->{version};
       $version = $this->{modules}->{polymer}->{version} if $artifactId =~ m/^core\-.*$/;
 
@@ -277,14 +278,17 @@ sub bower {
   my $module = shift;
   my $version = shift;
 
-  my $bower = $this->parseJson($group->{dir} . '/' . $module . "/bower.json");
+
+  my $bower;
+  $bower = $this->parseJson($group->{dir} . '/' . $module . "/bower.json") unless $this->{'force-parse-html'};
   return $bower if $bower;
 
-  $logger->warn("No bower file for $module");
+
+  $logger->warn("No bower file for $module") unless $this->{'force-parse-html'};
 
   my $cwd = getcwd();
 
-  $logger->debug("Parsing html file in $module ($cwd)" );
+  $logger->info("Parsing html file in $module ($cwd)" );
 
   $bower = {
     name => $module,
@@ -294,8 +298,6 @@ sub bower {
   };
 
   my $dhacks = {};
-
-  my $filePattern = $module . "/*.html";
 
   chdir $module;
 
@@ -307,7 +309,7 @@ sub bower {
       if(m!<link rel="import" href="\.\./([^/]+)/.*!){
         my $d = $1;
         $logger->debug( $d ) unless $dhacks->{$d};
-        $bower->{dependencies}->{$d} = $group->{org} . '/' . $module unless $dhacks->{$d};
+        $bower->{dependencies}->{$d} = $group->{org} . '/' . $d . '#^0' unless $dhacks->{$d};
         $dhacks->{$d} = 1;
       }
     }

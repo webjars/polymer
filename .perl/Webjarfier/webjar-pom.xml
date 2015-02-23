@@ -31,7 +31,7 @@
     <dependency>
       <groupId>[% dependency.groupId %]</groupId>
       <artifactId>[% dependency.artifactId %]</artifactId>
-      <version>[% dependency.version %]</version>
+      <version>[% IF dependency.version %][%  dependency.version %][% ELSE %][% polymer_version %][% END %]</version>
     </dependency>
     [%- END %]
   </dependencies>

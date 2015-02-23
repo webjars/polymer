@@ -13,7 +13,7 @@ use Webjarfier::RepoConfig;
 my $options = {};
 
 
-GetOptions ($options, 'fetch-tags', 'with-projects', 'with-deprecated', 'parse-html')
+GetOptions ($options, 'fetch-tags', 'with-projects', 'with-deprecated', 'force-parse-html')
   or die("Error in command line arguments\n");
 
 
