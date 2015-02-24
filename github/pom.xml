@@ -12,11 +12,12 @@
 
   <groupId>org.webjars</groupId>
   <artifactId>github</artifactId>
-  <version>10.1</version>
+  <version>10.1-SNAPSHOT</version>
   <name>github</name>
   <description>WebJar for Polymer </description>
 
   <properties>
+    <upstream.version>10.1</upstream.version>
     <upstream.github>michael</upstream.github>
     <upstream.version.prefix>v</upstream.version.prefix>
   </properties>

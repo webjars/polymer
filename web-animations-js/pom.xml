@@ -12,11 +12,12 @@
 
   <groupId>org.webjars</groupId>
   <artifactId>web-animations-js</artifactId>
-  <version>1.0.6</version>
+  <version>1.0.6-SNAPSHOT</version>
   <name>web-animations-js</name>
   <description>WebJar for Polymer </description>
 
   <properties>
+    <upstream.version>1.0.6</upstream.version>
     <upstream.github>web-animations</upstream.github>
   </properties>
 

@@ -12,11 +12,12 @@
 
   <groupId>org.webjars</groupId>
   <artifactId>paper-elements</artifactId>
-  <version>0.5.5</version>
+  <version>0.5.5-SNAPSHOT</version>
   <name>paper-elements</name>
   <description>WebJar for Polymer </description>
 
   <properties>
+    <upstream.version>0.5.5</upstream.version>
     <upstream.github>Polymer</upstream.github>
   </properties>
 
@@ -24,127 +25,127 @@
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>core-icons</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>core-scroll-header-panel</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>font-roboto</artifactId>
-      <version>[0.5,]</version>
+      <version>[0.5-SNAPSHOT,]</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-button</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-checkbox</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-dialog</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-dropdown</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-dropdown-menu</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-fab</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-icon-button</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-input</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-item</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-menu-button</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-progress</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-radio-button</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-radio-group</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-ripple</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-shadow</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-slider</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-spinner</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-tabs</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-toast</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>paper-toggle-button</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>polymer</artifactId>
-      <version>0.5.5</version>
+      <version>0.5.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.webjars</groupId>
       <artifactId>sampler-scaffold</artifactId>
-      <version>[0.5,]</version>
+      <version>[0.5-SNAPSHOT,]</version>
     </dependency>
   </dependencies>
 </project>

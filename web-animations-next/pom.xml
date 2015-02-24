@@ -12,11 +12,12 @@
 
   <groupId>org.webjars</groupId>
   <artifactId>web-animations-next</artifactId>
-  <version>master</version>
+  <version>master-SNAPSHOT</version>
   <name>web-animations-next</name>
   <description>WebJar for Polymer </description>
 
   <properties>
+    <upstream.version>master</upstream.version>
     <upstream.github>web-animations</upstream.github>
   </properties>
 

@@ -242,7 +242,7 @@ sub setDependencies {
       if($value =~ m!([^/]+)/([^#]+)#[\^~](.*)!){
       my $org = $1;
       my $artifactId = $2;
-      my $version = '['.$3.',]';
+      my $version = '['.$3.'-SNAPSHOT,]';
 
       next if $dependencies_hacks->{$moduleInfo->{artifactId}}->{$artifactId};
 
@@ -257,10 +257,10 @@ sub setDependencies {
       $groupId = $pinfos->{$artifactId}->{groupId} if $pinfos->{$artifactId}->{groupId};
 
       $version = $pinfos->{$artifactId}->{version} if $pinfos->{$artifactId}->{version};
-      $version = $this->{modules}->{polymer}->{version} if $artifactId =~ m/^core\-.*$/;
+      $version = $this->{modules}->{polymer}->{version} . '-SNAPSHOT' if $artifactId =~ m/^core\-.*$/;
 
-      $version = $this->{modules}->{polymer}->{version} if $artifactId =~ m/^paper\-.*$/;
-      $version = $this->{modules}->{polymer}->{version} if $artifactId eq "polymer";
+      $version = $this->{modules}->{polymer}->{version} . '-SNAPSHOT' if $artifactId =~ m/^paper\-.*$/;
+      $version = $this->{modules}->{polymer}->{version} . '-SNAPSHOT' if $artifactId eq "polymer";
 
       push @{$moduleInfo->{dependencies}}, {
        groupId => $groupId,

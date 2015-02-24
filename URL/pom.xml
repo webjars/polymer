@@ -12,11 +12,12 @@
 
   <groupId>org.webjars</groupId>
   <artifactId>URL</artifactId>
-  <version>0.5.5</version>
+  <version>0.5.5-SNAPSHOT</version>
   <name>URL</name>
   <description>WebJar for Polymer </description>
 
   <properties>
+    <upstream.version>0.5.5</upstream.version>
     <upstream.github>Polymer</upstream.github>
   </properties>
 
