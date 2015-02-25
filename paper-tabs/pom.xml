@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.webjars</groupId>
+    <artifactId>polymers</artifactId>
+    <version>0.5.5-SNAPSHOT</version>
+  </parent>
+
+  <packaging>jar</packaging>
+
+  <groupId>org.webjars</groupId>
+  <artifactId>paper-tabs</artifactId>
+  <version>0.5.5-SNAPSHOT</version>
+  <name>paper-tabs</name>
+  <description>WebJar for Polymer </description>
+
+  <properties>
+    <upstream.version>0.5.5</upstream.version>
+    <upstream.github>Polymer</upstream.github>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-icons</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-media-query</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-resizable</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-selector</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>core-toolbar</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>font-roboto</artifactId>
+      <version>[0.5-SNAPSHOT,]</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>paper-icon-button</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>paper-ripple</artifactId>
+      <version>0.5.5-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>
