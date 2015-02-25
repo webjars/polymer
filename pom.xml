@@ -1,117 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
-    
-    <packaging>jar</packaging>
-    <groupId>org.webjars</groupId>
-    <artifactId>polymer</artifactId>
-    <version>0.5.5-SNAPSHOT</version>
-    <name>Polymer</name>
-    <description>WebJar for Polymer</description>
-    <url>http://webjars.org</url>
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
 
-    <developers>
-        <developer>
-            <id>jamesward</id>
-            <name>James Ward</name>
-            <email>james@jamesward.com</email>
-        </developer>
-    </developers>
+  <packaging>pom</packaging>
+  <groupId>org.webjars</groupId>
+  <artifactId>polymers</artifactId>
+  <version>0.5.5-SNAPSHOT</version>
+  <name>WebComponent Webjars</name>
+  <description>WebJar for Polymer</description>
+  <url>http://webjars.org</url>
 
-    <licenses>
-        <license>
-            <name>BSD</name>
-            <url>https://github.com/polymer/polymer/blob/master/LICENSE</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
+  <properties>
+    <polymer.version>0.5.5</polymer.version>
+    <upstream.version>${project.version}</upstream.version>
+    <upstream.version.prefix />
+    <upstream.module>${project.artifactId}</upstream.module>
+    <upstream.github>Polymer</upstream.github>
+    <upstream.url>https://github.com/${upstream.github}/${upstream.module}/archive/${upstream.version.prefix}${upstream.version}.zip</upstream.url>
+    <destDir>
+      ${project.build.outputDirectory}/META-INF/resources/webjars/polymers/${polymer.version}/${project.artifactId}
+    </destDir>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
-    <scm>
-        <url>http://github.com/webjars/polymer</url>
-        <connection>scm:git:https://github.com/webjars/polymer.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/polymer.git</developerConnection>
-        <tag>HEAD</tag>
-    </scm>
-    
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>0.5.4</upstream.version>
-        <upstream.url>https://github.com/Polymer/polymer/archive</upstream.url>
-        <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
-    </properties>
+  <modules>
+    <module>NodeBind</module>
+    <module>TemplateBinding</module>
+    <module>URL</module>
+    <module>ace-element</module>
+    <module>chart-js</module>
+    <module>code-mirror</module>
+    <module>context-free-parser</module>
+    <module>cool-clock</module>
+    <module>core-a11y-keys</module>
+    <module>core-ajax</module>
+    <module>core-animated-pages</module>
+    <module>core-animation</module>
+    <module>core-collapse</module>
+    <module>core-component-page</module>
+    <module>core-component-page-dev</module>
+    <module>core-doc-viewer</module>
+    <module>core-docs</module>
+    <module>core-drag-drop</module>
+    <module>core-drawer-panel</module>
+    <module>core-dropdown</module>
+    <module>core-dropdown-menu</module>
+    <module>core-elements</module>
+    <module>core-focusable</module>
+    <module>core-header-panel</module>
+    <module>core-home-page</module>
+    <module>core-home-page-dev</module>
+    <module>core-icon</module>
+    <module>core-icon-button</module>
+    <module>core-icons</module>
+    <module>core-iconset</module>
+    <module>core-iconset-svg</module>
+    <module>core-image</module>
+    <module>core-input</module>
+    <module>core-item</module>
+    <module>core-label</module>
+    <module>core-layout-grid</module>
+    <module>core-layout-trbl</module>
+    <module>core-list</module>
+    <module>core-localstorage</module>
+    <module>core-media-query</module>
+    <module>core-menu</module>
+    <module>core-menu-button</module>
+    <module>core-meta</module>
+    <module>core-overlay</module>
+    <module>core-pages</module>
+    <module>core-popup-menu</module>
+    <module>core-range</module>
+    <module>core-resizable</module>
+    <module>core-scaffold</module>
+    <module>core-scroll-header-panel</module>
+    <module>core-scroll-threshold</module>
+    <module>core-selection</module>
+    <module>core-selector</module>
+    <module>core-shared-lib</module>
+    <module>core-signals</module>
+    <module>core-splitter</module>
+    <module>core-style</module>
+    <module>core-tests</module>
+    <module>core-toolbar</module>
+    <module>core-tooltip</module>
+    <module>core-transition</module>
+    <module>extern-generator</module>
+    <module>firebase</module>
+    <module>firebase-element</module>
+    <module>firebase-simple-login</module>
+    <module>flatiron-director</module>
+    <module>font-roboto</module>
+    <module>g-kratu</module>
+    <module>github</module>
+    <module>github-elements</module>
+    <module>google-apis</module>
+    <module>google-code-prettify</module>
+    <module>google-map</module>
+    <module>highlightjs-element</module>
+    <module>humane-js</module>
+    <module>inspector-elements</module>
+    <module>jquery2-import</module>
+    <module>js-beautify</module>
+    <module>marked-element</module>
+    <module>marked-js</module>
+    <module>more-elements</module>
+    <module>notification-elements</module>
+    <module>observe-js</module>
+    <module>paper-button</module>
+    <module>paper-calculator</module>
+    <module>paper-checkbox</module>
+    <module>paper-dialog</module>
+    <module>paper-docs</module>
+    <module>paper-dropdown</module>
+    <module>paper-dropdown-menu</module>
+    <module>paper-elements</module>
+    <module>paper-fab</module>
+    <module>paper-form</module>
+    <module>paper-icon-button</module>
+    <module>paper-input</module>
+    <module>paper-item</module>
+    <module>paper-menu-button</module>
+    <module>paper-progress</module>
+    <module>paper-radio-button</module>
+    <module>paper-radio-group</module>
+    <module>paper-ripple</module>
+    <module>paper-shadow</module>
+    <module>paper-slider</module>
+    <module>paper-spinner</module>
+    <module>paper-tabs</module>
+    <module>paper-toast</module>
+    <module>paper-toggle-button</module>
+    <module>pdf-js</module>
+    <module>pixi-js</module>
+    <module>polymer</module>
+    <module>polymer-expressions</module>
+    <module>polymer-gestures</module>
+    <module>polymer-test-tools</module>
+    <module>prettify-element</module>
+    <module>sampler-scaffold</module>
+    <module>smoothie-chart</module>
+    <module>speech-mic</module>
+    <module>speech-transcript</module>
+    <module>swipeable-card</module>
+    <module>three-js</module>
+    <module>tk-buildbot</module>
+    <module>tools</module>
+    <module>topeka-elements</module>
+    <module>typeahead-input</module>
+    <module>web-animations-js</module>
+    <module>web-animations-next</module>
+    <module>web-component-tester</module>
+    <module>webcomponentsjs</module>
+    <module>wu-weather</module>
+    <module>x-meta</module>
+    <module>x-tags</module>
+    <module>yt-video</module>
+  </modules>
 
-    <dependencies>
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>webcomponentsjs</artifactId>
-            <version>0.5.4</version>
-        </dependency>
-    </dependencies>
+  <developers>
+    <developer>
+      <id>jamesward</id>
+      <name>James Ward</name>
+      <email>james@jamesward.com</email>
+    </developer>
+    <developer>
+      <id>cheleb</id>
+      <name>Olivier NOUGUIER</name>
+      <email>olivier.nouguier@gmail.com</email>
+    </developer>
+  </developers>
 
-    <build>
+  <licenses>
+    <license>
+      <name>BSD</name>
+      <url>https://github.com/polymer/polymer/blob/master/LICENSE</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>http://github.com/cheleb/webco-polymer</url>
+    <connection>scm:git:https://github.com/cheleb/webco-polymer.git</connection>
+    <developerConnection>scm:git:https://github.com/cheleb/webco-polymer.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+
+
+  <profiles>
+    <profile>
+      <id>webjar</id>
+      <activation>
+        <file>
+          <exists>webjar</exists>
+        </file>
+      </activation>
+
+      <build>
         <plugins>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>wagon-maven-plugin</artifactId>
-                <version>1.0-beta-4</version>
-                <executions>
-                    <execution>
-                        <phase>process-resources</phase>
-                        <goals>
-                            <goal>download-single</goal>
-                        </goals>
-                        <configuration>
-                            <url>${upstream.url}</url>
-                            <fromFile>${upstream.version}.zip</fromFile>
-                            <toFile>${project.build.directory}/${project.artifactId}.zip</toFile>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.7</version>
-                <executions>
-                    <execution>
-                        <phase>process-resources</phase>
-                        <goals><goal>run</goal></goals>
-                        <configuration>
-                            <target>
-                                <echo message="unzip archive" />
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
-                                <echo message="moving resources" />
-                                <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/polymer-${upstream.version}" />
-                                </move>
-                            </target>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
-            </plugin>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
-                <extensions>true</extensions>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-antrun-plugin</artifactId>
+            <version>1.7</version>
+            <executions>
+              <execution>
+                <phase>process-resources</phase>
+                <goals>
+                  <goal>run</goal>
+                </goals>
                 <configuration>
-                    <serverId>sonatype-nexus-staging</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                  <target>
+                    <echo message="download archive"/>
+                    <get src="${upstream.url}" dest="${basedir}/${project.artifactId}-${upstream.version}.zip" skipexisting="true"/>
+                    <echo message="unzip archive"/>
+                    <unzip src="${basedir}/${project.artifactId}-${upstream.version}.zip"
+                           dest="${project.build.directory}"/>
+                    <echo message="moving resources"/>
+                    <move todir="${destDir}">
+                      <fileset dir="${project.build.directory}/${upstream.module}-${upstream.version}"/>
+                    </move>
+                  </target>
                 </configuration>
-            </plugin>
-        </plugins>
-    </build>
+              </execution>
+            </executions>
+          </plugin>
 
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.1</version>
+          </plugin>
+
+          <plugin>
+            <groupId>org.sonatype.plugins</groupId>
+            <artifactId>nexus-staging-maven-plugin</artifactId>
+            <version>1.6.5</version>
+            <extensions>true</extensions>
+            <configuration>
+              <serverId>sonatype-nexus-staging</serverId>
+              <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+              <autoReleaseAfterClose>true</autoReleaseAfterClose>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 </project>
