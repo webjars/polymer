@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>polymer</artifactId>
-    <version>0.5.6-SNAPSHOT</version>
+    <version>0.5.6</version>
     <name>Polymer</name>
     <description>WebJar for Polymer</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/polymer</url>
         <connection>scm:git:https://github.com/webjars/polymer.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/polymer.git</developerConnection>
-        <tag>HEAD</tag>
+        <tag>polymer-0.5.6</tag>
     </scm>
     
     <properties>
@@ -84,11 +84,11 @@
                         <goals><goal>run</goal></goals>
                         <configuration>
                             <target>
-                                <echo message="unzip archive"/>
-                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
-                                <echo message="moving resources"/>
+                                <echo message="unzip archive" />
+                                <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}" />
+                                <echo message="moving resources" />
                                 <move todir="${destDir}">
-                                    <fileset dir="${project.build.directory}/polymer-${upstream.version}"/>
+                                    <fileset dir="${project.build.directory}/polymer-${upstream.version}" />
                                 </move>
                             </target>
                         </configuration>
