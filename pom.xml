@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>polymer</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3-SNAPSHOT</version>
     <name>Polymer</name>
     <description>WebJar for Polymer</description>
     <url>http://webjars.org</url>
@@ -36,7 +36,7 @@
         <url>http://github.com/webjars/polymer</url>
         <connection>scm:git:https://github.com/webjars/polymer.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/polymer.git</developerConnection>
-        <tag>polymer-1.0.2</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <properties>
